@@ -43,3 +43,6 @@ terraform.rc
 tags
 # Persistent undo
 [._]*.un~
+
+#keys
+*.pem
