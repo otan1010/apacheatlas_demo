@@ -1,3 +1,5 @@
+Change subscription id in providers.tf
+
 terraform init
 terraform plan -out plan
 terraform apply plan
@@ -5,4 +7,3 @@ terraform apply plan
 terraform output -raw ssh_private_key_pem | Set-Content -Encoding ascii .\atlas_rsa.pem
 ssh -L 21000:localhost:21000 -i .\atlas_rsa.pem azureuser@<IP_ADDRESS>
 
-python create_objects.py
